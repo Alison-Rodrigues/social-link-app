@@ -1,0 +1,53 @@
+.screen-container.link {
+  width: 100%;
+  min-height: 80vh;
+  background-color: #F4F3EE;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.box-container {
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img-profile {
+  width: 210px;
+}
+.name-info {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.social-link {
+  background-color: #131E2F;
+  border-radius: 32px;
+  width: clamp(200px, 30vw, 450px);
+  height: 50px;
+  margin: 18px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.social-link a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 1.2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-link .icon {
+  width: 40px;
+  position: absolute;
+  left: 5px;
+}
+
