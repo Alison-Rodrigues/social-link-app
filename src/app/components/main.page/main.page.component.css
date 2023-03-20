@@ -98,6 +98,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 75px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 
 .input-user {
