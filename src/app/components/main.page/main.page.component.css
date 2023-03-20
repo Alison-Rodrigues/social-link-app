@@ -27,7 +27,7 @@
 .social-link {
   background-color: #131E2F;
   border-radius: 32px;
-  width: clamp(200px, 30vw, 450px);
+  width: clamp(280px, 30vw, 450px);
   height: 50px;
   margin: 18px 0;
   display: flex;
@@ -35,6 +35,9 @@
   align-items: center;
   position: relative;
   transition: all .2s;
+}
+.text-add-spotify {
+  margin: 0 5px;
 }
 .social-link a {
   text-decoration: none;
@@ -56,6 +59,95 @@
 .social-link:hover {
   background-color: #3A89FF;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.contact-screen-container {
+  width: 100%;
+  min-height: 80vh;
+  background-color: #F4F3EE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.text-contact {
+  font-size: clamp(1.5rem, 10vw, 3rem);
+  font-weight: 600;
+  color: #000000;
+  position: relative;
+  text-align: center;
+}
+.text-contact::before {
+  content: "";
+  width: 25%;
+  height: 16px;
+  background-color: #3A89FF;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+}
+
+.contact-container {
+  width: clamp(300px, 30vw, 450px);
+  height: 462px;
+  background-color: #131E2F;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+}
+
+.input-user {
+  width: 80%;
+  margin: 10px 0;
+  padding: 10px 20px;
+  border-radius: 32px;
+  border: solid 2px #FFFFFF;
+  outline: none;
+  background: none;
+  font-size: 1rem;
+  color: #FFFFFF;
+}
+.input-user::placeholder {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.input-user.message {
+  height: 180px;
+  resize: none;
+}
+.btn-send-message {
+  width: 80%;
+  height: 43px;
+  background-color: #3A89FF;
+  text-transform: uppercase;
+  border-radius: 32px;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all .2s;
+}
+.btn-send-message:hover {
+  background-color: #1d498a;
+}
+
+@media screen and (max-width: 1100px) {
+  .text-add-spotify {
+    display: none;
+  }
+  .text-contact::before {
+    bottom: -5px;
+  }
 }
 
 
