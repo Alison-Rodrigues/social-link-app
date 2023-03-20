@@ -148,6 +148,9 @@
   .text-contact::before {
     bottom: -5px;
   }
+  .btn-send-message {
+    font-size: 1rem;
+  }
 }
 
 
